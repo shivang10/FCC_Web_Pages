@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #204051;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+#navbar ul {
+    padding-right: 2em;
+    list-style: none;
+    float: right;
+    padding: 15px 20px 15px 0;
+}
+
+#navbar li {
+    padding: 0 14px 0 14px;
+    display: inline;
+    font-size: 2em;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#welcome-section {
+    top: 0;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    background-color: #3b6978;
+    height: 65vh;
+    width: 100%;
+    color: whitesmoke;
+}
+
+#welcome-section h1 {
+    padding-top: 200px;
+    font-size: 3em;
+}
+
+#welcome-section p {
+    font-size: 2em;
+    font-style: italic;
+}
+
+#projects {
+    top: 0;
+    left: 0;
+    align-items: center;
+    text-align: center;
+    background-color: #84a9ac;
+    height: 700px;
+}
+
+#projects p{
+    font-size: 2.5em;
+    text-decoration: underline;
+    padding: 40px 0 20px 0;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+
+.project-tile{
+    height: 240px;
+    font-size: 30px;
+    border: 2px solid black;
+    margin: 5px;
+    width: 90%;
+}
+
+.project-tile .desc{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.project-tile .desc h2{
+    justify-items: center;
+}*/
+
+.project-tile .links{
+    height: 30%;
+    background-color: #204051;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-tile .links a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.contact{
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    background-color: #3b6978;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.contact ul{
+    list-style: none;
+
+}
+.contact li{
+    display: inline;
+}
+
+#stxt{
+    font-size: 25px;
+    font-style: italic;
+}
+
+#txt{
+    font-size: 70px;
+}
+
+.contact ul{
+    padding-top: 40px;
+}
+
+.contact li{
+    padding: 15px;
+}
+
+.contact a{
+    color: whitesmoke;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+
+@media (max-width: 965px){
+    #projects{
+        height: 1000px;
+    }
+    .projects-list {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+    }
+}
